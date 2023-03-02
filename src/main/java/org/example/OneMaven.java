@@ -505,8 +505,8 @@ public class OneMaven {
         String hmap=hs+" ";
         l.log(Level.INFO,()->"before Sorting "+ hmap);
 
-        List<Map.Entry<String, Integer>> Hmap = hs.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).toList();
-        l.log(Level.INFO,()->"After Sorting "+ Hmap);
+        List<Map.Entry<String, Integer>> hhmap = hs.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).toList();
+        l.log(Level.INFO,()->"After Sorting "+ hhmap);
     }
     public void calc()
     {
