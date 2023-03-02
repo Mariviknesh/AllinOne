@@ -8,7 +8,7 @@ import java.sql.*;
 public class OneMaven {
     private static final String COM="com.api.jar";
     public static void main(String[] args) throws CloneNotSupportedException, FileNotFoundException {
-        Logger log=Logger.getLogger("com.api.jar");
+        Logger log=Logger.getLogger(COM);
         log.info("1.Bank\n2.Shape\n3.School\n4.Database\n5.Point\n6.Credit\n7.Linked List\n8.Hash Map\n9.Tic Tac Toe\n10.word Count\n11.Calculator\n");
         Scanner sc=new Scanner(System.in);
 
@@ -40,7 +40,7 @@ public class OneMaven {
                 int amt;
                 int choice=0;
                 Scanner mysc = new Scanner(System.in);
-                Logger log=Logger.getLogger("com.api.jar");
+                Logger log=Logger.getLogger(COM);
                 log.info("Enter the Account number:");
                 accno=mysc.nextInt();
                 log.info("Enter the Account holder name:");
@@ -81,7 +81,7 @@ public class OneMaven {
         double gpa;
         int ch=0;
         Scanner mysc=new Scanner(System.in);
-        Logger log=Logger.getLogger("com.api.jar");
+        Logger log=Logger.getLogger(COM);
         log.info("Enter the Student's name:");
         name=mysc.nextLine();
         log.info("Enter the Student's grade:");
@@ -128,7 +128,7 @@ public class OneMaven {
         String ra;
         String rp;
         Scanner mysc=new Scanner(System.in);
-        Logger log=Logger.getLogger("com.api.jar");
+        Logger log=Logger.getLogger(COM);
         for(int i=0;i<4;i++)
         {
             try {
@@ -139,8 +139,8 @@ public class OneMaven {
                     d1 = mysc.nextFloat();
                     d2 = mysc.nextFloat();
                     BasicShape b = new BasicShape(name, d1, d2);
-                    b.findArea(name, d1, d2);
-                    b.findPerimeter(name, d1, d2);
+                    b.findArea(d1, d2);
+                    b.findPerimeter(d1, d2);
                     ra = "" + b.retArea();
                     log.info(ra);
                     rp = "" + b.retPeri();
@@ -154,8 +154,8 @@ public class OneMaven {
                     d2 = mysc.nextFloat();
                     d3 = mysc.nextFloat();
                     BasicShape b = new BasicShape(name, d1, d2, d3);
-                    b.findArea(name, d1, d2, d3);
-                    b.findPerimeter(name, d1, d2, d3);
+                    b.findArea(d1, d2, d3);
+                    b.findPerimeter(d1, d2, d3);
                     log.info(are);
                     ra = "" + b.retArea();
                     log.info(ra);
@@ -189,7 +189,7 @@ public class OneMaven {
     }
     public void database()
     {
-        Logger log=Logger.getLogger("com.api.jar");
+        Logger log=Logger.getLogger(COM);
         Connection conn = null;
         int ch;
         Scanner s=new Scanner(System.in);
@@ -220,7 +220,7 @@ public class OneMaven {
         String x;
         String y;
         Scanner sc=new Scanner(System.in);
-        Logger log=Logger.getLogger("com.api.jar");
+        Logger log=Logger.getLogger(COM);
         log.info("Enter the value of x:");
         x=sc.next();
         log.info("Enter the value of y:");
@@ -241,7 +241,7 @@ public class OneMaven {
         String date;
         String y;
         Scanner sc=new Scanner(System.in);
-        Logger log=Logger.getLogger("com.api.jar");
+        Logger log=Logger.getLogger(COM);
         log.info("Enter the Cardholder name");
         name=sc.next();
         log.info("Enter the Card number");
@@ -352,7 +352,7 @@ public class OneMaven {
         int size;
         String name;
         Scanner sc=new Scanner(System.in);
-        Logger log= Logger.getLogger("com.api.jar");
+        Logger log= Logger.getLogger(COM);
         log.info("Enter the size");
         size=sc.nextInt();
         HashSet<String> hs=new HashSet< >();
@@ -421,7 +421,7 @@ public class OneMaven {
         int cnt=0;
         boolean ch;
         String[]sym={"x","o"};
-        Logger l=Logger.getLogger("com.api.jar");
+        Logger l=Logger.getLogger(COM);
         l.log(Level.INFO,()->"Enter the size of matrix");
         Scanner sc = new Scanner(System.in);
         size = sc.nextInt();
@@ -481,7 +481,7 @@ public class OneMaven {
         }
     }
     public void wordCount() throws FileNotFoundException {
-        Logger l=Logger.getLogger("com.api.jar");
+        Logger l=Logger.getLogger(COM);
         HashMap<String,Integer> hs=new HashMap<>();
         String se = "C:\\Users\\Tringapps-User2\\Documents\\example.txt";
         File file = new File(se);
@@ -515,7 +515,7 @@ public class OneMaven {
         int ch;
         String res;
         Scanner mysc=new Scanner(System.in);
-        Logger log=Logger.getLogger("com.api.jar");
+        Logger log=Logger.getLogger(COM);
         while(true)
         {
             log.info("Enter the 2 numbers:");

@@ -37,14 +37,14 @@ class BasicShape {
             area=(22*d1*d1)/7;
         }
     }
-    public void findArea(String name,double d1,double d2) {
+    public void findArea(double d1,double d2) {
 
         area=d1*d2;
     }
-    public void findArea(String name,double d1,double d2,double d3) {
+    public void findArea(double d1,double d2,double d3) {
 
 
-        area=0.5*d1*d2;
+        area=0.5*d1*d2*d3/d3;
     }
     public void findPerimeter(String name,double d1) {
         if(name.equals(sq))
@@ -56,11 +56,11 @@ class BasicShape {
             peri=(22*d1*2)/7;
         }
     }
-    public void findPerimeter(String name,double d1,double d2) {
+    public void findPerimeter(double d1,double d2) {
 
         peri=2*(d1+d2);
     }
-    public void findPerimeter(String name,double d1,double d2,double d3) {
+    public void findPerimeter(double d1,double d2,double d3) {
         peri=d1+d2+d3;
     }
     public double retArea()
