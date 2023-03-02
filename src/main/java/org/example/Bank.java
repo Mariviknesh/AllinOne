@@ -3,6 +3,7 @@ import java.util.logging.*;
 class Bank
 {
     String name;
+
     int accno;
     int bal;
     Logger log=Logger.getLogger("com.api.jar");

@@ -256,6 +256,7 @@ public class OneMaven {
         s2.display();
 
     }
+
     public void linkedlist()
     {
         String []data1;

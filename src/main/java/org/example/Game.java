@@ -5,6 +5,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class Game
+
 {
     Logger l=Logger.getLogger("com.api.jar");
     int size;

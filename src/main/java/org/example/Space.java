@@ -3,6 +3,7 @@ import java.util.logging.*;
 class Space implements Cloneable
 {
     String x;
+
     String y;
     Logger log=Logger.getLogger("com.api.jar");
 

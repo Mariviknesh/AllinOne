@@ -29,6 +29,7 @@ class BasicShape {
         this.d3=d3;
     }
     public void findArea(String name,double d1) {
+
         if(name.equals(sq))
         {
             area=d1*d1;

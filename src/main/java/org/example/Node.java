@@ -6,6 +6,7 @@ class Node
     Node nextnode;
     Node(Person a)
     {
+
         this.p=a;
         this.nextnode=null;
     }

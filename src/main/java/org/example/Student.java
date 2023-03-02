@@ -3,6 +3,7 @@ import java.util.logging.*;
 class Student{
     String name;
     String grade;
+
     double gpa;
     Logger log=Logger.getLogger("com.api.jar");
     Student(String name,String grade,double gpa)

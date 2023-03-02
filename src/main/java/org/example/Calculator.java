@@ -3,6 +3,7 @@ package org.example;
 class Calculator{
     int a;
     int b;
+
     Calculator()
     {
         this.a=0;

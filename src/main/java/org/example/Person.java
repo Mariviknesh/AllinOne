@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 class Person
 {
+
     private static final String COM="com.api.jar";
 
     String name;

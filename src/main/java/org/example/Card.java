@@ -3,6 +3,7 @@ import java.util.logging.*;
 class Card implements Cloneable
 {
     String name;
+
     String num;
     String date;
     String s="com.api.jar";
