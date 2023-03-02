@@ -11,11 +11,10 @@ public class OneMaven {
         Logger log=Logger.getLogger(COM);
         log.info("1.Bank\n2.Shape\n3.School\n4.Database\n5.Point\n6.Credit\n7.Linked List\n8.Hash Map\n9.Tic Tac Toe\n10.word Count\n11.Calculator\n");
         Scanner sc=new Scanner(System.in);
-
-
         int ch;
         OneMaven o=new OneMaven();
         do {
+            log.info("Enter the assignment number:");
             ch=sc.nextInt();
             switch (ch) {
                 case 1 -> o.bank();
@@ -72,7 +71,7 @@ public class OneMaven {
                     {
                         log.info("Input Mismatch Error");
                     }
-                mysc.close();
+
     }
     public void school()
     {
@@ -115,7 +114,7 @@ public class OneMaven {
 
             }
         }
-        mysc.close();
+
     }
     public void shape()
     {
@@ -185,7 +184,6 @@ public class OneMaven {
                 log.info("Enter correct input\n");
             }
         }
-        mysc.close();
     }
     public void database()
     {
@@ -213,7 +211,7 @@ public class OneMaven {
                 db1.close(conn);
             }
         }
-        s.close();
+
     }
     public void point() throws CloneNotSupportedException
     {
@@ -232,7 +230,7 @@ public class OneMaven {
         Space s2=(Space)s1.clone();
         log.info("Object");
         s2.display();
-        sc.close();
+
     }
     public void credit() throws CloneNotSupportedException
     {
@@ -256,7 +254,7 @@ public class OneMaven {
         Card s2=(Card)s1.clone();
         log.info("Cloned Object\n");
         s2.display();
-        sc.close();
+
     }
     public void linkedlist()
     {

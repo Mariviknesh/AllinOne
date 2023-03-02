@@ -35,7 +35,7 @@ class Dbase {
         } catch (Exception e) {
             log.info("Not Connected");
         }
-        s.close();
+        //s.close();
         return null;
     }
 
