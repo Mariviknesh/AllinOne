@@ -1,5 +1,4 @@
 package org.example;
-import java.util.Scanner;
 import java.util.logging.*;
 class Student{
     String name;
@@ -19,9 +18,13 @@ class Student{
     }
     public void display()
     {
-        log.info("Student Name:"+this.name+"\n");
-        log.info("Student Grade:"+this.grade+"\n");
-        log.info("Student GPA:"+this.gpa+"\n");
+        String str1="Student Name:"+this.name+"\n";
+        String str2="Student Grade:"+this.grade+"\n";
+        String str3="Student GPA:"+this.gpa+"\n";
+
+        log.info(str1);
+        log.info(str2);
+        log.info(str3);
 
     }
 

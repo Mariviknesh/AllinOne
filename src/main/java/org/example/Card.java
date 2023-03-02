@@ -1,5 +1,4 @@
 package org.example;
-import java.util.Scanner;
 import java.util.logging.*;
 class Card implements Cloneable
 {
